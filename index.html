@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Knowlton - Professional Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body background="smile.jpeg">
+    <header>
+        <div class="logo">RK</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+        <button onclick="window.location.href='resume.html'">Resume</button>
+    </header>
+
+    <section id="about" class="section">
+        <div class="content">
+            <img src="profile.jpg" alt="Robert Knowlton">
+            <h2>About Me</h2>
+            <p>Hi, I'm Robert Knowlton. I am a web developer with over 5 years of experience in creating responsive and accessible websites.</p>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <div class="content">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Winner - Best Web Developer Award 2018</li>
+                <li>Featured Speaker at Tech Conference 2020</li>
+                <li>Published multiple articles on web development best practices</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="content">
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science, Polish-Japanese academy of Information Technology (2022)</p>
+            <p>Certified Web Developer, ABC Institute (2017)</p>
+        </div>
+    </section>
+
+    <section id="recommendations" class="section">
+        <div class="content">
+            <h2>Recommendations</h2>
+            <blockquote>"John is an incredibly talented developer with a strong work ethic. Highly recommend!"<br>  - Jane Smith, Senior Developer at TechCorp</blockquote>
+            <blockquote>"John's dedication to accessibility and user experience sets him apart in the field."<br>  - John Doe, Mentor & Former Boss</blockquote>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="social-links">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <p>&copy; 2025 Robert Knowlton. All rights reserved.</p>
+    </footer>
+
+    <section id="contact" class="modal">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <button class="contact-button" onclick="document.getElementById('contact').classList.toggle('open')">Contact</button>
+</body>
+</html>
